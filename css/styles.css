@@ -54,11 +54,12 @@ footer {
   width: 100%;
   align-items: center;
   display: flex;
-  margin-top: 10px;
-  margin-bottom: 6px;
+  margin-top: -11px;
+  margin-bottom: -7px;
   padding-left: 40px;
   padding: 0 0px;
   justify-content: center;
+  background-color: #f4f9f9;
 }
 
 .headerLogo {
@@ -93,7 +94,7 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   /*background-size: auto;*/
-  margin-top: 35px;
+  margin-top: 7px;
   height: 650px;
   width: 100%;
 }

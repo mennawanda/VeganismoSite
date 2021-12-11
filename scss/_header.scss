@@ -1,0 +1,36 @@
+.header {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  margin-top: -11px;
+  margin-bottom: -7px;
+  padding-left: 40px;
+  padding: 0 0px;
+  justify-content: center;
+  background-color: #f4f9f9;
+
+  &Menu {
+    ul {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      list-style: none;
+      padding-left: 60px;
+      box-sizing: content-box;
+
+      li {
+        display: inline-block;
+      }
+    }
+  }
+
+  &Logo {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 75px;
+      cursor: pointer;
+    }
+  }
+}
