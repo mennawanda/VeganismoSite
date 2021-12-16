@@ -1,17 +1,26 @@
-.header {
-  width: 100%;
-  align-items: center;
+/* MIXIN */
+@mixin h($ancho, $margentop, $margenbottom, $paddingleft, $padding) {
+  width: $ancho;
+  margin-top: $margentop;
+  margin-bottom: $margenbottom;
+  padding-left: $paddingleft;
+  padding: $padding;
+}
+
+.display {
   display: flex;
-  margin-top: -11px;
-  margin-bottom: -7px;
-  padding-left: 40px;
-  padding: 0 0px;
+}
+
+.header {
+  @include h(100%, -11px, -7px, 40px, 0 0px);
+  @extend .display;
+  align-items: center;
   justify-content: center;
   background-color: #f4f9f9;
 
   &Menu {
     ul {
-      display: flex;
+      @extend .display;
       justify-content: space-between;
       width: 100%;
       list-style: none;
@@ -25,7 +34,7 @@
   }
 
   &Logo {
-    display: flex;
+    @extend .display;
     align-items: center;
 
     img {
