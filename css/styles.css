@@ -317,7 +317,7 @@ ya que si modificaba uno me cambiaba en ambas páginas*/
 
 /* MEDIA QUERIES */
 /* Hasta 1500px en mi pantalla se ven bien los elementos, menos de eso se empiezan a mover */
-@media screen and (max-width: 1669px) {
+@media screen and (max-width: 1668px) {
   .recetas {
     background-color: #87986a;
     background-position: center;
