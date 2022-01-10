@@ -333,7 +333,7 @@ ya que si modificaba uno me cambiaba en ambas páginas*/
   .flexContainer2 {
     width: 100%;
     max-width: 1200 px;
-    height: 942px;
+    height: 1000px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
