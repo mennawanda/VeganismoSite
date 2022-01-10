@@ -36,61 +36,39 @@
           </nav>
     </header>
 
-    <section class="contacto">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="well well-sm">
-                        <form class="form-horizontal" method="post">
-                            <fieldset>
-                                <h1 class="animate__animated animate__bounce">¡Contactate con nosotros!</h1>
-                                <div class="form-group">
-                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                                    <div class="col-md-8">
-                                        <input id="fname" name="name" type="text" placeholder="First Name" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                                    <div class="col-md-8">
-                                        <input id="lname" name="name" type="text" placeholder="Last Name" class="form-control">
-                                    </div>
-                                </div>
-        
-                                <div class="form-group">
-                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
-                                    <div class="col-md-8">
-                                        <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
-                                    </div>
-                                </div>
-        
-                                <div class="form-group">
-                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
-                                    <div class="col-md-8">
-                                        <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
-                                    </div>
-                                </div>
-        
-                                <div class="form-group">
-                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
-                                    <div class="col-md-8">
-                                        <textarea class="form-control" id="message" name="message" placeholder="Enter your massage for us here. We will get back to you within 2 business days." rows="7"></textarea>
-                                    </div>
-                                </div>
-        
-                                <div class="form-group">
-                                    <div class="col-md-12 text-center">
-                                        <!--<button type="submit" class="btn btn-primary btn-lg">Submit</button>-->
-                                        <input type="submit" value="Enviar">
-                                    </div>
-                                </div>
-                            </fieldset>
-                        </form>
-                    </div>
-                </div>
+    <h1 class="tituloProd animate_animated animate__heartBeat">¡Contactate con nosotros!</h1>
+
+    <div class="container">
+        <form action="action_page.php">
+          <div class="fila">
+            <div class="col-25">
+              <label for="nombre">Nombre</label>
             </div>
-        </div>
-    </section>
+            <div class="col-75">
+              <input type="text" id="nombre" name="firstname" placeholder="Tu nombre...">
+            </div>
+          </div>
+          <div class="fila">
+            <div class="col-25">
+              <label>Email</label>
+            </div>
+            <div class="col-75">
+                <input type="email" id="email" name="email" placeholder="ejemplo@ejemplo.com">
+            </div>
+          </div>
+          <div class="fila">
+            <div class="col-25">
+              <label for="mensaje">Mensaje</label>
+            </div>
+            <div class="col-75">
+              <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje..." style="height:200px"></textarea>
+            </div>
+          </div>
+          <div class="fila">
+            <input type="submit" value="Enviar">
+          </div>
+        </form>
+      </div>
 
     <footer>
         <p> Todos los derechos reservados. </p>
